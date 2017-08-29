@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class TelematicsService {
-    void report(VehicleInfo vehicleInfo) {
+    static void report(VehicleInfo vehicleInfo) {
 
         int VIN = vehicleInfo.getVIN();
         File file = new File("./" + ((Integer) VIN).toString() + ".json");
